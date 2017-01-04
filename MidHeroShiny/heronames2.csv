@@ -1,0 +1,113 @@
+hero_id;hero_name;URL
+1;Anti-Mage;http://i.imgur.com/0teSOBX.png
+2;Axe;http://i.imgur.com/wkDhYKx.png
+3;Bane;http://i.imgur.com/iKgaITa.png
+4;Bloodseeker;http://i.imgur.com/wkDhYKx.png
+5;Crystal Maiden;http://i.imgur.com/rd81UVU.png
+6;Drow Ranger;http://i.imgur.com/G3jKS53.png
+7;Earthshaker;http://i.imgur.com/SWloAYp.png
+8;Juggernaut;http://i.imgur.com/sYrEAet.png
+9;Mirana;http://i.imgur.com/VcVHq0b.png
+10;Morphling;http://i.imgur.com/LeKswPN.png
+11;Shadow Fiend;http://i.imgur.com/01Uriag.png
+12;Phantom Lancer;http://i.imgur.com/NeMPXq8.png
+13;Puck;http://i.imgur.com/QY8l93k.png
+14;Pudge;http://i.imgur.com/dyNu68k.png
+15;Razor;http://i.imgur.com/UkwQ0SE.png
+16;Sand King;http://i.imgur.com/wA5tPug.png
+17;Storm Spirit;http://i.imgur.com/KjAnJCF.png
+18;Sven;http://i.imgur.com/x43odZi.png
+19;Tiny;http://i.imgur.com/QVLGofh.png
+20;Vengeful Spirit;http://i.imgur.com/ukFPx7N.png
+21;Windranger;http://i.imgur.com/dWlJUco.png
+22;Zeus;http://i.imgur.com/DrtT8Ck.png
+23;Kunkka;http://i.imgur.com/SmKDnSI.png
+25;Lina;http://i.imgur.com/WHPrqoq.png
+26;Lion;http://i.imgur.com/rkzjKQB.png
+27;Shadow Shaman;http://i.imgur.com/dT2Sppy.png
+28;Slardar;http://i.imgur.com/P8aLl1I.png
+29;Tidehunter;http://i.imgur.com/5t2Nuo4.png
+30;Witch Doctor;http://i.imgur.com/GcvOfiJ.png
+31;Lich;http://i.imgur.com/EyEB0L6.png
+32;Riki;http://i.imgur.com/H3pv8vR.png
+33;Enigma;http://i.imgur.com/IuXYutV.png
+34;Tinker;http://i.imgur.com/S8JROcg.png
+35;Sniper;http://i.imgur.com/49k28pM.png
+36;Necrophos;http://i.imgur.com/LeKswPN.png
+37;Warlock;http://i.imgur.com/tZutqWx.png
+38;Beastmaster;http://i.imgur.com/N7QYpPJ.png
+39;Queen of Pain;http://i.imgur.com/kBDEBTw.png
+40;Venomancer;http://i.imgur.com/EbLfXxO.png
+41;Faceless Void;http://i.imgur.com/5md09cw.png
+42;Wraith King;http://i.imgur.com/jz08AAk.png
+43;Death Prophet;http://i.imgur.com/9Wi7kSk.png
+44;Phantom Assassin;http://i.imgur.com/DAXB77U.png
+45;Pugna;http://i.imgur.com/eX7Biui.png
+46;Templar Assassin;http://i.imgur.com/qTMMB8d.png
+47;Viper;http://i.imgur.com/LssGDOG.png
+48;Luna;http://i.imgur.com/qKs8tL9.png
+49;Dragon Knight;http://i.imgur.com/ASzLTlU.png
+50;Dazzle;http://i.imgur.com/tQLfnDU.png
+51;Clockwerk;http://i.imgur.com/1Vhvp0r.png
+52;Leshrac;http://i.imgur.com/mGEGMZA.png
+53;Nature's Prophet;http://i.imgur.com/tgqd05B.png
+54;Lifestealer;http://i.imgur.com/1FPAE4J.png
+55;Dark Seer;http://i.imgur.com/tT7V5lo.png
+56;Clinkz;http://i.imgur.com/q1AzHvK.png
+57;Omniknight;http://i.imgur.com/XRCPalj.png
+58;Enchantress;http://i.imgur.com/2ty3xrB.png
+59;Huskar;http://i.imgur.com/CwWt7vc.png
+60;Night Stalker;http://i.imgur.com/jPNREi4.png
+61;Broodmother;http://i.imgur.com/Vk2XZuR.png
+62;Bounty Hunter;http://i.imgur.com/OkyfRYN.png
+63;Weaver;http://i.imgur.com/sbEO9N5.png
+64;Jakiro;http://i.imgur.com/1FvlU8t.png
+65;Batrider;http://i.imgur.com/PtgbTrO.png
+66;Chen;http://i.imgur.com/hfqRqIP.png
+67;Spectre;http://i.imgur.com/x9krlmU.png
+68;Ancient Apparition;http://i.imgur.com/brzHR8f.png
+69;Doom;http://i.imgur.com/3JRH79z.png
+70;Ursa;http://i.imgur.com/oWyWioI.png
+71;Spirit Breaker;http://i.imgur.com/OV8l9wc.png
+72;Gyrocopter;http://i.imgur.com/eFO5k5S.png
+73;Alchemist;http://i.imgur.com/awYaJkg.png
+74;Invoker;http://i.imgur.com/TUnqzBD.png
+75;Silencer;http://i.imgur.com/1bkIY00.png
+76;Outworld Devourer;http://i.imgur.com/rc6Xc2y.png
+77;Lycan;http://i.imgur.com/UGkRBQm.png
+78;Brewmaster;http://i.imgur.com/vzYCnpn.png
+79;Shadow Demon;http://i.imgur.com/GyBRIld.png
+80;Lone Druid;http://i.imgur.com/Qc1saMx.png
+81;Chaos Knight;http://i.imgur.com/OGI1JaP.png
+82;Meepo;http://i.imgur.com/Klj6mGZ.png
+83;Treant Protector;http://i.imgur.com/FZN4OUE.png
+84;Ogre Magi;http://i.imgur.com/xqSFvNu.png
+85;Undying;http://i.imgur.com/OJQDE6a.png
+86;Rubick;http://i.imgur.com/7qeslIV.png
+87;Disruptor;http://i.imgur.com/O63a6qf.png
+88;Nyx Assassin;http://i.imgur.com/FQZP801.png
+89;Naga Siren;http://i.imgur.com/dLbQPc4.png
+90;Keeper of the Light;http://i.imgur.com/iI0sBzs.png
+91;Io;http://i.imgur.com/GbruCyR.png
+92;Visage;http://i.imgur.com/PGBxNno.png
+93;Slark;http://i.imgur.com/TJyYrIW.png
+94;Medusa;http://i.imgur.com/i5fYuoK.png
+95;Troll Warlord;http://i.imgur.com/z2F64e1.png
+96;Centaur Warrunner;http://i.imgur.com/XRe8RLA.png
+97;Magnus;http://i.imgur.com/9cJJeyM.png
+98;Timbersaw;http://i.imgur.com/alxrc5b.png
+99;Bristleback;http://i.imgur.com/Xkc4yFk.png
+100;Tusk;http://i.imgur.com/pf6Paue.png
+101;Skywrath Mage;http://i.imgur.com/aKDzZx0.png
+102;Abaddon;http://i.imgur.com/aZr5IFF.png
+103;Elder Titan;http://i.imgur.com/8QKeMq1.png
+104;Legion Commander;http://i.imgur.com/PZNcSzx.png
+105;Techies;http://i.imgur.com/eV2fGXV.png
+106;Ember Spirit;http://i.imgur.com/RHck5OJ.png
+107;Earth Spirit;http://i.imgur.com/ajPhvxs.png
+109;Terrorblade;http://i.imgur.com/6N6pRcI.png
+110;Phoenix;http://i.imgur.com/GNLYtQC.png
+111;Oracle;http://i.imgur.com/xbz0DbU.png
+112;Winter Wyvern;http://i.imgur.com/VVnG9Mn.png
+113;Arc Warden;http://i.imgur.com/Xkc4yFk.png
+114;Monkey King;http://i.imgur.com/ZwDXVZ5.png
