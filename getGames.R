@@ -10,10 +10,10 @@ library(tidyr)
 options("scipen"=10)
 
 # Number of matchIDs to extract
-numMatches <- 200000
+numMatches <- 500000
 
 # Create SQL query text
-sqlQuery <- paste("select  * from public_matches where start_time > 1482278400 AND duration > 900 AND avg_mmr > 2500 AND num_mmr > 3 limit ",
+sqlQuery <- paste("select  * from public_matches where start_time > 1483362553 AND duration > 900 AND avg_mmr > 2500 AND num_mmr > 2 limit ",
                   numMatches, ";", sep = "")
 
 # Execute query on opendota API
@@ -24,8 +24,14 @@ gameListDF <- gameList$rows
 finalList <- NULL
 
 # Iterate through all the games we have
-for (i in 1:nrow(gameListDF)) {
+for (i in 194228:nrow(gameListDF)) {
 
+  # Since this takes days to run, i¨ve learnt the hard way that sometimes your computer doesn't like you and decides to restart
+  # or crash, so we save every now and then.
+  if (i %% 25000 == 0 ) {
+    saveRDS(finalList, "matches.RDS")
+  }
+  
   print(paste("Parsing game: ", i))
   matchID <- gameListDF[i, "match_id"]
 
@@ -72,7 +78,23 @@ for (i in 1:nrow(gameListDF)) {
     }
   
   # Obtain list of the position for the first 10 minute for every player
-  lanePosList <- flatten(readJSON$players$lane_pos)
+  if (is.data.frame(readJSON$players$lane_pos)) {
+    lanePosList <- flatten(readJSON$players$lane_pos)
+  } else {
+    print(paste("      replay not parsed."))
+    
+    endTime <- proc.time()[3]
+    totTime <- endTime - startTime
+    
+    if (totTime >= 1) {
+      print(proc.time()[3] - startTime)
+      next
+    } else {
+      Sys.sleep(1.05-totTime)
+      print(proc.time()[3] - startTime)
+      next
+    }
+  }
   
   # Game time in minutes
   gameTime <- round((readJSON$duration/60) / 10, digits = 0) * 10
