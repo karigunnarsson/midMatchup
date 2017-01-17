@@ -67,7 +67,7 @@ topHero <- totalMerged %>%
                       meanGold = mean(gold1 - gold2),
                       winRate = sum(win)/n(), 
                       numGames = n())
-topHeroClean <- subset(topHero, topHero$numGames > 100)
+topHeroClean <- subset(topHero, topHero$numGames > 200)
 
 topHeroClean <- select(merge(topHeroClean, heroNames, by.x = "hero1", by.y = "hero_id", all.x = TRUE),
                        heroName2, meanXP, meanGold, winRate, numGames)

@@ -20,11 +20,13 @@ sqlQuery <- paste("select  * from public_matches where start_time > 1483362553 A
 gameList <- fromJSON(paste("https://api.opendota.com/api/explorer?sql=", URLencode(sqlQuery), sep=""))
 gameListDF <- gameList$rows
 
+gameListDF <- arrange(gameListDF, match_id)
+
 # Initialize the dataframe
 finalList <- NULL
 
 # Iterate through all the games we have
-for (i in 194228:nrow(gameListDF)) {
+for (i in 1:nrow(gameListDF)) {
 
   # Since this takes days to run, i¨ve learnt the hard way that sometimes your computer doesn't like you and decides to restart
   # or crash, so we save every now and then.

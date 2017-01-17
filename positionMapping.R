@@ -8,7 +8,7 @@ library(car)
 library(rgl)
 
 gameData <- readRDS("matches.RDS")
-gameDataClean <- select(gameData, matchID, radiantWin, heroID, gold, xp, meanX, meanY, avgDistMean, side)
+gameDataClean <- unique(select(gameData, matchID, radiantWin, heroID, gold, xp, meanX, meanY, avgDistMean, side))
 
 radiantData <- subset(gameDataClean, gameDataClean$side == "Radiant")
 direData <- subset(gameDataClean, gameDataClean$side == "Dire")
