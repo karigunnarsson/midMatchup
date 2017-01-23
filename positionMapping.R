@@ -54,6 +54,9 @@ show2d({                  # show2d uses 2D plot function's output as a texture o
 },
 expand = 1 , texmipmap = F )
 
+# Creates a spinning gif
+#movie3d( spin3d(rpm = 6), duration=10, fps = 10, dir="gif/", clean=FALSE, type = "gif")
+
 # This gives pretty bad fitting for jungle as you can see, but it?s fine for mid, which is all we want
 # for this analysis.
 
@@ -93,6 +96,9 @@ show2d({                  # show2d uses 2D plot function's output as a texture o
   grid.draw(gtable_filter(ggplotGrob(densityPlot2), "panel"))
 },
 expand = 1 , texmipmap = F )
+
+
+
 
 # We see similar problem here, good mid lane accuracy but not great on other lanes.
 

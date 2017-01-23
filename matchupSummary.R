@@ -35,7 +35,7 @@ sumData <- totalMerged %>%
                        meanGold1 = mean(gold1), meanGold2 = mean(gold2),
                        winRate = sum(win)/n(), numGames = n())
 
-sumDataClean <- subset(sumData, sumData$numGames>20)
+sumDataClean <- subset(sumData, sumData$numGames>40)
 
 # Add hero names to make more readable
 heroNames <- read.csv2("heronames.csv")
