@@ -13,7 +13,7 @@ options("scipen"=10)
 numMatches <- 500000
 
 # Create SQL query text
-sqlQuery <- paste("select  * from public_matches where start_time > 1483362553 AND duration > 900 AND avg_mmr > 2500 AND num_mmr > 2 limit ",
+sqlQuery <- paste("select  * from public_matches where start_time > 1491776731 AND duration > 900 AND avg_mmr > 2000 AND num_mmr > 1 limit ",
                   numMatches, ";", sep = "")
 
 # Execute query on opendota API
@@ -22,18 +22,12 @@ gameListDF <- gameList$rows
 
 gameListDF <- arrange(gameListDF, match_id)
 
-# Initialize the dataframe
-finalList <- NULL
+count <- 1
+finalList <- list()
 
 # Iterate through all the games we have
 for (i in 1:nrow(gameListDF)) {
 
-  # Since this takes days to run, i¨ve learnt the hard way that sometimes your computer doesn't like you and decides to restart
-  # or crash, so we save every now and then.
-  if (i %% 25000 == 0 ) {
-    saveRDS(finalList, "matches.RDS")
-  }
-  
   print(paste("Parsing game: ", i))
   matchID <- gameListDF[i, "match_id"]
 
@@ -56,7 +50,7 @@ for (i in 1:nrow(gameListDF)) {
       print(proc.time()[3] - startTime)
       next
     } else {
-      Sys.sleep(1.05-totTime)
+      Sys.sleep(1.00-totTime)
       print(proc.time()[3] - startTime)
       next
     }
@@ -73,7 +67,7 @@ for (i in 1:nrow(gameListDF)) {
       print(proc.time()[3] - startTime)
       next
     } else {
-      Sys.sleep(1.05-totTime)
+      Sys.sleep(1.00-totTime)
       print(proc.time()[3] - startTime)
       next
     }
@@ -92,7 +86,7 @@ for (i in 1:nrow(gameListDF)) {
       print(proc.time()[3] - startTime)
       next
     } else {
-      Sys.sleep(1.05-totTime)
+      Sys.sleep(1.00-totTime)
       print(proc.time()[3] - startTime)
       next
     }
@@ -154,24 +148,24 @@ for (i in 1:nrow(gameListDF)) {
     }
   }
   
-  if (length(finalList) == 1) {
-    finalList <- matchList
-  } else {
-    finalList <- rbind.fill(finalList, matchList)
-  } 
+  finalList[[count]] <- matchList
+  count <- count + 1
   print(paste("      replay parsed!"))
   
   endTime <- proc.time()[3]
   totTime <- endTime - startTime
   
   if (totTime < 1) {
-    Sys.sleep(1.05-totTime)
+    Sys.sleep(1.00-totTime)
     print(proc.time()[3] - startTime)
   }
 }
 
-# Assign a side
-finalList$side <- ifelse(finalList$playerSlot < 10, "Radiant", "Dire")
+finalListComplete <- rbindlist(finalList, fill = TRUE)
+
+finalListComplete$side <- ifelse(finalListComplete$playerSlot < 10, "Radiant", "Dire")
+finalListComplete[is.na(finalListComplete)] <- 0
+
 
 # Save the file
-saveRDS(finalList, "matches.RDS")
+saveRDS(finalListComplete, "matches_705.RDS")
